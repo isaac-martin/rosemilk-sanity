@@ -1,9 +1,7 @@
 import S from '@sanity/desk-tool/structure-builder'
 import MdSettings from 'react-icons/lib/md/settings'
-import MdPerson from 'react-icons/lib/md/person'
 
-const hiddenDocTypes = listItem =>
-  !['category', 'author', 'post', 'siteSettings'].includes(listItem.getId())
+const hiddenDocTypes = listItem => !['siteSettings', 'product', 'page', 'productVariant'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -19,18 +17,18 @@ export default () =>
             .documentId('siteSettings')
         ),
       S.listItem()
-        .title('Blog posts')
-        .schemaType('post')
-        .child(S.documentTypeList('post').title('Blog posts')),
+        .title('Products')
+        .schemaType('product')
+        .child(S.documentTypeList('product').title('Products')),
       S.listItem()
-        .title('Authors')
-        .icon(MdPerson)
-        .schemaType('author')
-        .child(S.documentTypeList('author').title('Authors')),
+        .title('Pages')
+        .schemaType('page')
+        .child(S.documentTypeList('page').title('Pages')),
       S.listItem()
-        .title('Categories')
-        .schemaType('category')
-        .child(S.documentTypeList('category').title('Categories')),
+        .title('Variants')
+        .schemaType('productVariant')
+        .child(S.documentTypeList('productVariant').title('Variants')),
+
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
