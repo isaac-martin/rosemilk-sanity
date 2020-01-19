@@ -8,15 +8,20 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import product from './documents/product'
 import page from './documents/page'
 import productVariant from './documents/variant'
-
+import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
+import menu from './documents/menu'
+import customLink from './documents/customLink'
+
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
-import bioPortableText from './objects/bioPortableText'
 import excerptPortableText from './objects/excerptPortableText'
-
+import socialSharing from './objects/socialSharing'
 import mainImage from './objects/mainImage'
+import imageGallery from './objects/imageGallery'
+
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,9 +37,13 @@ export default createSchema({
     page,
     mainImage,
     bodyPortableText,
-    bioPortableText,
     excerptPortableText,
-    productVariant
+    productVariant,
+    collection,
+    socialSharing,
+    imageGallery,
+    menu,
+    customLink
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

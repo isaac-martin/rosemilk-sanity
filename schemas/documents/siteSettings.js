@@ -10,10 +10,9 @@ export default {
       title: 'Title'
     },
     {
-      name: 'description',
-      type: 'text',
-      title: 'Description',
-      description: 'Describe your blog for search engines and social media.'
+      name: 'social',
+      type: 'socialSharing',
+      title: 'Social Sharing + Google Data'
     },
     {
       name: 'keywords',

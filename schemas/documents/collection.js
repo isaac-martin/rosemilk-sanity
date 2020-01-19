@@ -1,7 +1,7 @@
 export default {
-  name: 'page',
+  name: 'collection',
   type: 'document',
-  title: 'Page',
+  title: 'Collection',
   fields: [
     {
       name: 'title',
@@ -18,6 +18,17 @@ export default {
       }
     },
     {
+      name: 'products',
+      title: 'Products',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'product' }]
+        }
+      ]
+    },
+    {
       name: 'socialSharing',
       type: 'socialSharing',
       title: 'Social Sharing Data'
@@ -27,6 +38,6 @@ export default {
     select: {
       title: 'title',
       slug: 'slug',
-    },
+    }
   }
 }
