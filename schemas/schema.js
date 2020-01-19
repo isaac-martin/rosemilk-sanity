@@ -23,6 +23,8 @@ import socialSharing from './objects/socialSharing'
 import mainImage from './objects/mainImage'
 import imageGallery from './objects/imageGallery'
 import templateSelector from './objects/templateSelector'
+import shopifyData from './objects/shopifyData'
+
 
 
 
@@ -49,7 +51,8 @@ export default createSchema({
     menu,
     customLink,
     stockist,
-    templateSelector
+    templateSelector,
+    shopifyData
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
