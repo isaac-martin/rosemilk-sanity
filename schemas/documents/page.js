@@ -9,6 +9,11 @@ export default {
       title: 'Title'
     },
     {
+      name: 'pageTemplateSelector',
+      type: 'pageTemplateSelector',
+      title: 'Page Template Selector'
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

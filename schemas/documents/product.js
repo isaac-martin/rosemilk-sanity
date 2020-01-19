@@ -50,6 +50,12 @@ export default {
           readOnly: true
         },
         {
+          name: 'procuctType',
+          type: 'string',
+          title: 'Product Type',
+          readOnly: true
+        },
+        {
           name: 'productId',
           type: 'number',
           title: 'Product ID',

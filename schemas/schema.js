@@ -12,6 +12,8 @@ import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
 import menu from './documents/menu'
 import customLink from './documents/customLink'
+import stockist from './documents/stockist'
+
 
 
 // Object types
@@ -20,6 +22,8 @@ import excerptPortableText from './objects/excerptPortableText'
 import socialSharing from './objects/socialSharing'
 import mainImage from './objects/mainImage'
 import imageGallery from './objects/imageGallery'
+import templateSelector from './objects/templateSelector'
+
 
 
 
@@ -43,7 +47,9 @@ export default createSchema({
     socialSharing,
     imageGallery,
     menu,
-    customLink
+    customLink,
+    stockist,
+    templateSelector
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
