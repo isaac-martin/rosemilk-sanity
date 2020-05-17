@@ -2,6 +2,7 @@ export default {
   name: 'homePage',
   type: 'document',
   title: 'Home Page',
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'title',
