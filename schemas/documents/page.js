@@ -9,11 +9,6 @@ export default {
       title: 'Title'
     },
     {
-      name: 'pageTemplateSelector',
-      type: 'pageTemplateSelector',
-      title: 'Page Template Selector'
-    },
-    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
@@ -21,6 +16,11 @@ export default {
         source: 'title',
         maxLength: 96
       }
+    },
+    {
+      name: 'introText',
+      type: 'bodyPortableText',
+      title: 'Page Text'
     },
     {
       name: 'socialSharing',
@@ -31,7 +31,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      slug: 'slug',
-    },
+      slug: 'slug'
+    }
   }
 }

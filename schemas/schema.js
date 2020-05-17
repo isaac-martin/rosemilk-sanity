@@ -7,14 +7,13 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // document schemas
 import product from './documents/product'
 import page from './documents/page'
+import homePage from './documents/homePage'
 import productVariant from './documents/variant'
 import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
 import menu from './documents/menu'
 import customLink from './documents/customLink'
 import stockist from './documents/stockist'
-
-
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -24,10 +23,6 @@ import mainImage from './objects/mainImage'
 import imageGallery from './objects/imageGallery'
 import templateSelector from './objects/templateSelector'
 import shopifyData from './objects/shopifyData'
-
-
-
-
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -41,6 +36,7 @@ export default createSchema({
     siteSettings,
     product,
     page,
+    homePage,
     mainImage,
     bodyPortableText,
     excerptPortableText,

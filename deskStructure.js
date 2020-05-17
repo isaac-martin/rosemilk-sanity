@@ -1,12 +1,41 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdSettings, MdAttachMoney, MdDescription, MdShoppingCart, MdMenu, MdLink, MdShoppingBasket } from 'react-icons/md'
+import {
+  MdSettings,
+  MdAttachMoney,
+  MdDescription,
+  MdShoppingCart,
+  MdMenu,
+  MdLink,
+  MdShoppingBasket
+} from 'react-icons/md'
 
-const hiddenDocTypes = listItem => !['siteSettings', 'product', 'page', 'collection','productVariant','menu','customLink','stockist'].includes(listItem.getId())
+const hiddenDocTypes = listItem =>
+  ![
+    'siteSettings',
+    'product',
+    'page',
+    'homePage',
+    'collection',
+    'productVariant',
+    'menu',
+    'customLink',
+    'stockist'
+  ].includes(listItem.getId())
 
 export default () =>
   S.list()
     .title('Content')
     .items([
+      S.listItem()
+        .title('Home Page')
+        .icon(MdDescription)
+        .schemaType('homePage')
+        .child(S.documentTypeList('homePage').title('Home Page')),
+      S.listItem()
+        .title('Pages')
+        .icon(MdDescription)
+        .schemaType('page')
+        .child(S.documentTypeList('page').title('Pages')),
       S.listItem()
         .title('Products')
         .icon(MdAttachMoney)
@@ -22,11 +51,6 @@ export default () =>
         .icon(MdShoppingCart)
         .schemaType('collection')
         .child(S.documentTypeList('collection').title('Collections')),
-      S.listItem()
-        .title('Pages')
-        .icon(MdDescription)
-        .schemaType('page')
-        .child(S.documentTypeList('page').title('Pages')),
       S.listItem()
         .title('Stockists')
         .icon(MdShoppingBasket)
