@@ -2,5 +2,5 @@ export default {
   name: 'imageGallery',
   type: 'array',
   title: 'Gallery',
-  of: [{type: 'mainImage'}],
+  of: [{ type: 'mainImage' }]
 }

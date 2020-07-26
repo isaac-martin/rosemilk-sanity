@@ -2,7 +2,7 @@ export default {
   name: 'socialSharing',
   type: 'object',
   title: 'Social Sharing Data',
-  options: {collapsible: true, collapsed: true},
+  options: { collapsible: true, collapsed: true },
   description: '',
   fields: [
     {

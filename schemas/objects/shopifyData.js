@@ -2,7 +2,7 @@ export default {
   name: 'shopifyData',
   type: 'object',
   title: 'Shopify Data',
-  options: {collapsible: true, collapsed: true},
+  options: { collapsible: true, collapsed: true },
   description: '',
   fields: [
     {
@@ -18,7 +18,7 @@ export default {
       readOnly: true
     },
     {
-      name: 'procuctType',
+      name: 'productType',
       type: 'string',
       title: 'Product Type',
       readOnly: true
