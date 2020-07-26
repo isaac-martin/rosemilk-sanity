@@ -1,12 +1,8 @@
 import React from 'react'
 
-const slugGenerator = {
-  product: 'products'
-}
 const assembleProjectUrl = ({ displayed, options: { previewURL } }) => {
   const { _type } = displayed
 
-  console.log(displayed)
   let slug, urlPath
   if (_type === 'product') {
     slug = displayed.shopifyData.slug.current
