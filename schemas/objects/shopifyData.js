@@ -27,7 +27,15 @@ export default {
       name: 'productId',
       type: 'number',
       title: 'Product ID',
-      readOnly: true
+      readOnly: true,
+      hidden: true
+    },
+    {
+      name: 'variantId',
+      type: 'number',
+      title: 'Variant ID',
+      readOnly: true,
+      hidden: true
     },
     {
       name: 'variants',

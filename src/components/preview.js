@@ -23,9 +23,7 @@ const assembleProjectUrl = ({ displayed, options: { previewURL } }) => {
     return ''
   }
 
-  const url = `${previewURL}/${urlPath}${slug}`
-  console.log('url', url)
-  return url
+  return `${previewURL}/${urlPath}${slug}`
 }
 
 const IframePreview = ({ options, document: { displayed } }) => {

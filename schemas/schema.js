@@ -14,6 +14,7 @@ import siteSettings from './documents/siteSettings'
 import menu from './documents/menu'
 import customLink from './documents/customLink'
 import stockist from './documents/stockist'
+import faq from './documents/faq'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -48,7 +49,8 @@ export default createSchema({
     customLink,
     stockist,
     templateSelector,
-    shopifyData
+    shopifyData,
+    faq
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

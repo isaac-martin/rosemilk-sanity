@@ -36,19 +36,6 @@ export default {
       title: 'Shopify Data'
     },
     {
-      name: 'relatedProducts',
-      title: 'Related Products',
-      type: 'array',
-      description: 'Show related products on bottom of page',
-      validation: Rule => Rule.max(3).warning('Max of 3 related products'),
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'product'}]
-        }
-      ]
-    },
-    {
       name: 'socialSharing',
       type: 'socialSharing',
       title: 'Social Sharing Data'
@@ -62,7 +49,7 @@ export default {
       media: 'mainImage',
       price: 'shopifyData.defaultPrice'
     },
-    prepare({title = 'No title', slug = {}, media, price}) {
+    prepare({ title = 'No title', slug = {}, media, price }) {
       return {
         title,
         media,
