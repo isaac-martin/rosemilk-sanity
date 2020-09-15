@@ -16,7 +16,8 @@ export default {
   ],
   preview: {
     select: {
-      title: 'title'
+      title: 'question',
+      subtitle: 'answer'
     }
   }
 }

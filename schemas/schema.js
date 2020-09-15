@@ -11,8 +11,6 @@ import homePage from './documents/homePage'
 import productVariant from './documents/variant'
 import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
-import menu from './documents/menu'
-import customLink from './documents/customLink'
 import stockist from './documents/stockist'
 import faq from './documents/faq'
 
@@ -45,8 +43,6 @@ export default createSchema({
     collection,
     socialSharing,
     imageGallery,
-    menu,
-    customLink,
     stockist,
     templateSelector,
     shopifyData,

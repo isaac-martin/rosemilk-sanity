@@ -23,7 +23,6 @@ const hiddenDocTypes = listItem =>
     'homePage',
     'collection',
     'productVariant',
-    'menu',
     'customLink',
     'stockist'
   ].includes(listItem.getId())
@@ -49,7 +48,7 @@ export default () =>
                     .component(IframePreview)
                     .icon(MdSettings)
                     .title('Web Preview')
-                    .options({ previewURL })
+                    .options({previewURL})
                 ])
             )
         ),
@@ -70,7 +69,7 @@ export default () =>
                     .component(IframePreview)
                     .icon(MdSettings)
                     .title('Web Preview')
-                    .options({ previewURL })
+                    .options({previewURL})
                 ])
             )
         ),
@@ -91,7 +90,7 @@ export default () =>
                     .component(IframePreview)
                     .icon(MdSettings)
                     .title('Web Preview')
-                    .options({ previewURL })
+                    .options({previewURL})
                 ])
             )
         ),
@@ -110,16 +109,6 @@ export default () =>
         .icon(MdShoppingBasket)
         .schemaType('stockist')
         .child(S.documentTypeList('stockist').title('Stockists')),
-      S.listItem()
-        .title('Menus')
-        .icon(MdMenu)
-        .schemaType('menu')
-        .child(S.documentTypeList('menu').title('Menus')),
-      S.listItem()
-        .title('External Links')
-        .icon(MdLink)
-        .schemaType('customLink')
-        .child(S.documentTypeList('customLink').title('External Links')),
       S.listItem()
         .title('Settings')
         .icon(MdSettings)
