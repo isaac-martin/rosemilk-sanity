@@ -18,6 +18,12 @@ export default {
       readOnly: true
     },
     {
+      name: 'compareAtPrice',
+      type: 'string',
+      title: 'Discounted Price',
+      readOnly: true
+    },
+    {
       name: 'productType',
       type: 'string',
       title: 'Product Type',
