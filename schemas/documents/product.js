@@ -15,6 +15,18 @@ export default {
       title: 'Description'
     },
     {
+      name: 'deleted',
+      title: 'Deleted',
+      type: 'boolean',
+      description: 'This can be a flag set if the item is deleted from Shopify'
+    },
+    {
+      name: 'mainImage',
+      type: 'image',
+      title: 'Shopify Image',
+      readOnly: true
+    },
+    {
       name: 'width',
       type: 'number',
       title: 'Width In Inches'
