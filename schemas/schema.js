@@ -13,6 +13,7 @@ import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
 import stockist from './documents/stockist'
 import faq from './documents/faq'
+import releaseDate from './documents/date'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -46,7 +47,8 @@ export default createSchema({
     stockist,
     templateSelector,
     shopifyData,
-    faq
+    faq,
+    releaseDate
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

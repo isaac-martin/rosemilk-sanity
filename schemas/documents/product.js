@@ -15,6 +15,12 @@ export default {
       title: 'Description'
     },
     {
+      title: 'Release Date',
+      name: 'releaseDate',
+      type: 'reference',
+      to: [{ type: 'releaseDate' }]
+    },
+    {
       name: 'deleted',
       title: 'Deleted',
       type: 'boolean',
