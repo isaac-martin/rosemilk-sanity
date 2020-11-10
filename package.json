@@ -30,7 +30,8 @@
     "react-icons": "^3.8.0",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
     "sanity-plugin-dashboard-widget-gatsby": "^1.0.9",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
+    "sanity-plugin-media": "^0.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
