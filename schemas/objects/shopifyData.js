@@ -20,7 +20,8 @@ export default {
     {
       name: 'compareAtPrice',
       type: 'string',
-      title: 'Discounted Price',
+      title: 'Compare At Price',
+      description: 'Price before discount etc',
       readOnly: true
     },
     {
