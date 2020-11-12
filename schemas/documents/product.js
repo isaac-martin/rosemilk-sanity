@@ -22,9 +22,10 @@ export default {
     },
     {
       name: 'deleted',
-      title: 'Deleted',
+      title: 'Hide from website',
       type: 'boolean',
-      description: 'This can be a flag set if the item is deleted from Shopify'
+      description:
+        'This is set manually when an item is deleted from shopify, but you can also toggle to not show on website. If you want to show on date, use the release date'
     },
     {
       name: 'mainImage',
