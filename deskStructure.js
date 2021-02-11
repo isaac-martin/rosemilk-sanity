@@ -1,15 +1,7 @@
 import S from '@sanity/desk-tool/structure-builder'
 import IframePreview from './src/components/preview'
 
-import {
-  MdSettings,
-  MdAttachMoney,
-  MdDescription,
-  MdShoppingCart,
-  MdMenu,
-  MdLink,
-  MdShoppingBasket
-} from 'react-icons/md'
+import { MdSettings, MdDescription, MdShoppingBasket } from 'react-icons/md'
 
 const remoteURL = 'https://rosemilk-ceramics-8662181615.gtsb.io/'
 const localURL = 'http://localhost:8000'
@@ -48,7 +40,7 @@ export default () =>
                     .component(IframePreview)
                     .icon(MdSettings)
                     .title('Web Preview')
-                    .options({previewURL})
+                    .options({ previewURL })
                 ])
             )
         ),
@@ -69,41 +61,10 @@ export default () =>
                     .component(IframePreview)
                     .icon(MdSettings)
                     .title('Web Preview')
-                    .options({previewURL})
+                    .options({ previewURL })
                 ])
             )
         ),
-      S.listItem()
-        .title('Products')
-        .icon(MdAttachMoney)
-        .schemaType('product')
-        .child(
-          S.documentTypeList('product')
-            .title('Products')
-            .child(documentId =>
-              S.document()
-                .documentId(documentId)
-                .schemaType('product')
-                .views([
-                  S.view.form().icon(MdDescription),
-                  S.view
-                    .component(IframePreview)
-                    .icon(MdSettings)
-                    .title('Web Preview')
-                    .options({previewURL})
-                ])
-            )
-        ),
-      S.listItem()
-        .title('Variants')
-        .icon(MdAttachMoney)
-        .schemaType('productVariant')
-        .child(S.documentTypeList('productVariant').title('Variants')),
-      S.listItem()
-        .title('Collections')
-        .icon(MdShoppingCart)
-        .schemaType('collection')
-        .child(S.documentTypeList('collection').title('Collections')),
       S.listItem()
         .title('Stockists')
         .icon(MdShoppingBasket)

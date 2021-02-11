@@ -5,11 +5,8 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // document schemas
-import product from './documents/product'
 import page from './documents/page'
 import homePage from './documents/homePage'
-import productVariant from './documents/variant'
-import collection from './documents/collection'
 import siteSettings from './documents/siteSettings'
 import stockist from './documents/stockist'
 import faq from './documents/faq'
@@ -22,7 +19,6 @@ import socialSharing from './objects/socialSharing'
 import mainImage from './objects/mainImage'
 import imageGallery from './objects/imageGallery'
 import templateSelector from './objects/templateSelector'
-import shopifyData from './objects/shopifyData'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -34,19 +30,16 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     siteSettings,
-    product,
+
     page,
     homePage,
     mainImage,
     bodyPortableText,
     excerptPortableText,
-    productVariant,
-    collection,
     socialSharing,
     imageGallery,
     stockist,
     templateSelector,
-    shopifyData,
     faq,
     releaseDate
 
